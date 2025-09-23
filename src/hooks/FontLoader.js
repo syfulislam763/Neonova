@@ -11,14 +11,17 @@ const FontLoader = ({children}) => {
 
         (
             async function loadFonts () {
-                // await Font.loadAsync({
-                //     "Archivo_Regular": require("../../assets/fonts/archivo/Archivo-Regular.ttf"),
-                //     "Archivo-SemiBold":require("../../assets/fonts/archivo/Archivo-SemiBold.ttf"),
-                //     "Archivo-ExtraBold": require("../../assets/fonts/archivo/Archivo-ExtraBold.ttf"),
-                //     "Inter_18pt-Regular":require("../../assets/fonts/inter/Inter_18pt-Regular.ttf"),
-                //     "Inter_18pt-SemiBold":require("../../assets/fonts/inter/Inter_18pt-SemiBold.ttf")
+                await Font.loadAsync({
+                    "Tektur-ExtraBold": require("../../assets/fonts/tektur/Tektur-ExtraBold.ttf"),
+                    "Tektur-Medium":require("../../assets/fonts/tektur/Tektur-Medium.ttf"),
+                    "Tektur-SemiBold": require("../../assets/fonts/tektur/Tektur-SemiBold.ttf"),
+                    "Tektur-Regular": require("../../assets/fonts/tektur/Tektur-Regular.ttf"),
 
-                // })
+                    "Inter_18pt-Regular":require("../../assets/fonts/inter/Inter_18pt-Regular.ttf"),
+                    "Inter_18pt-SemiBold":require("../../assets/fonts/inter/Inter_18pt-SemiBold.ttf"),
+                    "Inter_18pt-Medium":require("../../assets/fonts/inter/Inter_18pt-Medium.ttf")
+
+                })
                 setFontsLoaded(true);
             }
 

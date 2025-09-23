@@ -19,7 +19,6 @@ export default function App() {
           <AuthProvider>
             <View style={{flex:1, backgroundColor:"white"}}>
               {/* <StatusBar/> */}
-
               <RootNavigation/>
 
             </View>
