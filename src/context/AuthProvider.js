@@ -6,7 +6,7 @@ export const AuthProvider = ({children}) => {
     const [isAuthenticated, setIsAuthenticated] = useState(false);
     const [isPersonalized, setIsPersonalized] = useState(false);
     const [isSubscribed, setIsSubscribed] = useState(false);
-
+    
 
 
 

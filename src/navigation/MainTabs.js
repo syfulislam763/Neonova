@@ -1,42 +1,83 @@
 import React from "react";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
-// import BudgetStack from "./tabs/BudgetStack";
-// import CalculatorStack from "./tabs/CalculatorStack";
-// import FinadateStack from "./tabs/FinadateStack";
-// import ProfileStack from "./tabs/ProfileStack";
-// import HomeStack from "./tabs/HomeStack";
+import { View } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
-import {Home, User, Calendar, Calculator, Wallet} from 'lucide-react-native'
+import {Home, KeyboardMusic, SquarePlay, Users} from 'lucide-react-native'
+import HomeStack from "./tabs/HomeStack";
+import ProductStack from "./tabs/ProductStack";
+import ProfileStack from "./tabs/ProfileStack";
+import VideoStack from "./tabs/VideoStack";
 
 const Tab = createBottomTabNavigator();
-
 
 export default function MainTabs() {
    return (
     <Tab.Navigator
         screenOptions={({ route }) => ({
             headerShown: false,
-            tabBarShowLabel: true,
-            tabBarActiveTintColor: "#4F55BA",
-            tabBarInactiveTintColor: "gray",
+            tabBarShowLabel: false,
+            
             tabBarStyle: {
-                paddingTop:10,
-                height:100,
+                paddingTop: 20,
+                height: 100,
+                backgroundColor: '#0f1c25',
+                borderTopEndRadius: 40,
+                borderTopLeftRadius: 40,
+                borderTopColor:'#000'
             },
-            // tabBarIcon: ({ color, size }) => {
-            //     let iconName;
+            tabBarIcon: ({ color, size, focused }) => {
+                // Use inline styles instead of NativeWind classes for better performance
+                const backgroundStyle = {
+                    padding: 12,
+                    borderRadius: 50,
+                    backgroundColor: focused ? "#a3e636" : "#060f15"
+                };
+                
+                const iconColor = focused ? "#000000" : "#9ca3af";
+                
+                let IconComponent;
+                
+                switch (route.name) {
+                    case "HomeStack":
+                        IconComponent = Home;
+                        break;
+                    case "ProductStack":
+                        IconComponent = KeyboardMusic;
+                        break;
+                    case "VideoStack":
+                        IconComponent = SquarePlay;
+                        break;
+                    case "ProfileStack":
+                        IconComponent = Users;
+                        break;
+                    default:
+                        IconComponent = Home;
+                }
 
-            //     if (route.name === "HomeStack") iconName = "home";
-            //     else if (route.name === "ProfileStack") iconName = "person-circle-outline";
-            //     else if (route.name === "FindateStack") iconName = "calendar";
-            //     else if (route.name === "CalculatorStack") iconName = "calculator";
-            //     else if (route.name === "BudgetStack") iconName = "wallet";
-
-            //     return <Ionicons name={iconName} size={size} color={color} />;
-            // },
+                return (
+                    <View style={backgroundStyle}>
+                        <IconComponent color={iconColor} size={24} />
+                    </View>
+                );
+            },
         })}
     >
-        
+        <Tab.Screen 
+            name="HomeStack"
+            component={HomeStack}
+        />
+        <Tab.Screen 
+            name="ProductStack"
+            component={ProductStack}
+        />
+        <Tab.Screen 
+            name="VideoStack"
+            component={VideoStack}
+        />
+        <Tab.Screen 
+            name="ProfileStack"
+            component={ProfileStack}
+        />
         
     </Tab.Navigator>
   );

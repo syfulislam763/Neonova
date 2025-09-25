@@ -69,7 +69,7 @@ const WelcomeScreenTwo = () => {
                 <TouchableOpacity
                     className="bg-[#a3e636] py-4 rounded-2xl mb-6"
                     activeOpacity={0.8}
-                    onPress={()=>navigation.navigate("WelcomeScreenFinal")}
+                    onPress={()=>navigation.navigate("RoleSelectionScreen")}
                 >
                     <Text className="text-black text-lg font-semibold text-center font-tektur-semibold">
                         Launch
