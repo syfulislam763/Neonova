@@ -8,7 +8,7 @@ export default function VideoStack () {
     return (
         <Stack.Navigator
             screenOptions={{
-                headerShown:true
+                headerShown:false
             }}
         >
 
