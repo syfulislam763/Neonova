@@ -8,7 +8,7 @@ export default function ProductStack () {
     return (
         <Stack.Navigator
             screenOptions={{
-                headerShown:true
+                headerShown:false
             }}
         >
 

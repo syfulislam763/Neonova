@@ -10,7 +10,7 @@ import {
 import { BlurView } from 'expo-blur';
 import { Heart } from 'lucide-react-native';
 
-const SearchedProductsComponent = () => {
+const ProductCardGrid = () => {
   const [favorites, setFavorites] = React.useState({});
 
   const handleProductPress = (productId) => {
@@ -60,18 +60,6 @@ const SearchedProductsComponent = () => {
     <View className="flex-1 ">
       <StatusBar barStyle="light-content" backgroundColor="#1e293b" />
       
-      <ScrollView className="flex-1 px-5 pt-6">
-        {/* Header */}
-        <View className="mb-6">
-          <Text className="text-white text-2xl font-bold mb-3">
-            Searched Products
-          </Text>
-          <Text className="text-gray-400 text-base leading-6">
-            There are many variations of passages of Lorem Ipsum{'\n'}
-            but the majority have suffered available
-          </Text>
-        </View>
-
         {/* Products Grid */}
         <View className="flex-row flex-wrap justify-between">
           {productsData.map((product, index) => (
@@ -131,9 +119,8 @@ const SearchedProductsComponent = () => {
             </TouchableOpacity>
           ))}
         </View>
-      </ScrollView>
     </View>
   );
 };
 
-export default SearchedProductsComponent;
+export default ProductCardGrid;
