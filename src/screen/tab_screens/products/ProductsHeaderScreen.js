@@ -10,9 +10,11 @@ import {
 } from 'react-native';
 import { BlurView } from 'expo-blur';
 import { ChevronLeft, Search, ShoppingCart, Bell } from 'lucide-react-native';
+import { useNavigation } from '@react-navigation/native';
 
 const ProductsHeaderScreen = () => {
   const [searchText, setSearchText] = React.useState('');
+  const navigation = useNavigation()
 
   const handleBack = () => {
     console.log('Back pressed');
@@ -51,7 +53,7 @@ const ProductsHeaderScreen = () => {
           {/* Right Side - Cart, Notification, Profile */}
           <View className="flex-row items-center gap-3">
             <TouchableOpacity
-              onPress={handleCart}
+              onPress={() => navigation.navigate("OrderCard")}
               className="w-12 h-12 bg-gray-700/50 rounded-full items-center justify-center"
               activeOpacity={0.7}
             >

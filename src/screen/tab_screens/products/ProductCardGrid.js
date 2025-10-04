@@ -9,6 +9,7 @@ import {
 } from 'react-native';
 import { BlurView } from 'expo-blur';
 import { Heart } from 'lucide-react-native';
+import { useNavigation } from '@react-navigation/native';
 
 const ProductCardGrid = () => {
   const [favorites, setFavorites] = React.useState({});
@@ -56,6 +57,8 @@ const ProductCardGrid = () => {
     }
   ];
 
+  const navigation = useNavigation()
+
   return (
     <View className="flex-1 ">
       <StatusBar barStyle="light-content" backgroundColor="#1e293b" />
@@ -66,7 +69,7 @@ const ProductCardGrid = () => {
             <TouchableOpacity
               key={product.id}
               className="w-[48%] mb-4"
-              onPress={() => handleProductPress(product.id)}
+              onPress={() => navigation.navigate("ProductDetailScreen", product)}
             >
               <BlurView
                 className="rounded-2xl overflow-hidden"
