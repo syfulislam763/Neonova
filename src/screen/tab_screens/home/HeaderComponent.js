@@ -9,9 +9,11 @@ import {
 } from 'react-native';
 import { BlurView } from 'expo-blur';
 import { Bell, Search } from 'lucide-react-native';
+import { useNavigation } from '@react-navigation/native';
 
 const HeaderComponent = () => {
   const [searchText, setSearchText] = React.useState('');
+  const navigation = useNavigation()
 
   const handleNotificationPress = () => {
     console.log('Notification pressed');
@@ -53,7 +55,7 @@ const HeaderComponent = () => {
           </TouchableOpacity>
 
           {/* Profile Image */}
-          <TouchableOpacity onPress={handleProfilePress} activeOpacity={0.7}>
+          <TouchableOpacity onPress={() => navigation.navigate("ProfileScreen")} activeOpacity={0.7}>
             <Image
               source={{
                 uri: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop&crop=face'
