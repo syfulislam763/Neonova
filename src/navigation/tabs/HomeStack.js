@@ -10,6 +10,12 @@ import SubscriptionScreen from "../../screen/tab_screens/home/user_profile/Subsc
 import PrivacyPolicyScreen from "../../screen/tab_screens/home/user_profile/PrivacyPolicyScreen";
 import MessagingScreen from "../../screen/tab_screens/home/user_profile/MessagingScreen";
 import ChatConversationScreen from "../../screen/tab_screens/home/user_profile/ChatConversationScreen";
+import AddProductScreen from "../../screen/tab_screens/home/user_profile/AddProductScreen";
+import AddProductScreenTwo from "../../screen/tab_screens/home/user_profile/AddProductScreenTwo";
+import UploadTrainingScreen from "../../screen/tab_screens/home/user_profile/UploadTrainingScreen";
+import EpisodeScreen from "../../screen/tab_screens/home/user_profile/EpisodeScreen";
+
+
 
 const Stack = createNativeStackNavigator();
 
@@ -59,6 +65,25 @@ export default function HomeStack () {
             <Stack.Screen 
                 name="ChatConversationScreen"
                 component={ChatConversationScreen}
+            />
+
+            
+            <Stack.Screen 
+                name="AddProductScreen"
+                component={AddProductScreen}
+            />
+            <Stack.Screen 
+                name="AddProductScreenTwo"
+                component={AddProductScreenTwo}
+            />
+
+            <Stack.Screen 
+                name="UploadTrainingScreen"
+                component={UploadTrainingScreen}
+            />
+            <Stack.Screen 
+                name="EpisodeScreen"
+                component={EpisodeScreen}
             />
 
         </Stack.Navigator>

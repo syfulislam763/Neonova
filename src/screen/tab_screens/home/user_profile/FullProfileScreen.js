@@ -8,10 +8,11 @@ import {
   StatusBar,
 } from 'react-native';
 import { BlurView } from 'expo-blur';
-import { ChevronLeft, Bell, Flame, Edit } from 'lucide-react-native';
+import { ChevronLeft, Bell, Flame, Edit, Dumbbell, PlayCircle, Star } from 'lucide-react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { useNavigation } from '@react-navigation/native';
 import SearchedProductsComponent from '../SearchedProductsComponent';
+import MyTrainingSessionScreen from './MyTrainingSessionScreen';
 
 
 const FullProfileScreen = () => {
@@ -219,11 +220,17 @@ const FullProfileScreen = () => {
           {/* Upload Products Button */}
           <TouchableOpacity
             className="bg-lime-500 py-4 rounded-xl items-center mb-6"
-            onPress={handleUploadProducts}
+            onPress={() => {
+              if(activeTab=="Products"){
+                navigation.navigate("AddProductScreen")
+              }else{
+                navigation.navigate("UploadTrainingScreen")
+              }
+            }}
             activeOpacity={0.8}
           >
             <Text className="text-black text-base font-bold">
-              Upload Products
+              {activeTab=="Products"?"Upload Products":"Upload Training"}
             </Text>
           </TouchableOpacity>
 
@@ -328,7 +335,9 @@ const FullProfileScreen = () => {
         </View>
 
         <View>
-          <SearchedProductsComponent/>
+          {activeTab == "Products"?
+            <SearchedProductsComponent/>
+            :<MyTrainingSessionScreen/>}
         </View>
       </ScrollView>
     </SafeAreaView>
