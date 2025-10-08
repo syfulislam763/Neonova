@@ -125,7 +125,7 @@ const RoleSelectionScreen = () => {
                         }`}
                         onPress={() => navigation.navigate("CreateAccountScreen")}
                     >
-                        <Text className="text-base font-semibold font-tektur-semibold text-white">
+                        <Text className="text-base font-semibold font-tektur-semibold text-black">
                         Join Now
                         </Text>
                     </TouchableOpacity>

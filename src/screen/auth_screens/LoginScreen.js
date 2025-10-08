@@ -157,7 +157,7 @@ const LoginScreen = () => {
                         onPress={() => setIsAuthenticated(true)}
                         activeOpacity={0.8}
                     >
-                        <Text className="text-base font-semibold text-white">
+                        <Text className="text-base font-semibold text-[#060f15]">
                         Login
                         </Text>
                     </TouchableOpacity>

@@ -60,7 +60,7 @@ const CreateAccountScreen = () => {
         
             <SafeAreaView className="flex-1">
                
-                <View className="flex-1 px-5 pt-16">
+                <View className="flex-1 px-5">
                 
                 {/* Header */}
                 <View className="mb-8">
@@ -272,7 +272,7 @@ const CreateAccountScreen = () => {
                     className={`py-4 rounded-xl items-center mb-6 ${"bg-[#a3e636]"}`}
                     onPress={() => {}}
                 >
-                    <Text className="text-base font-semibold text-white font-tektur-semibold">
+                    <Text className="text-base font-semibold text-black font-tektur-semibold">
                     Get Started
                     </Text>
                 </TouchableOpacity>
