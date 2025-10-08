@@ -54,10 +54,10 @@ const UserProfileScreen = () => {
 
             {/* User Info */}
             <View className="flex-1">
-              <Text className="text-white text-2xl font-bold">
+              <Text className="text-white text-2xl font-tektur-semibold">
                 Artus Schulz
               </Text>
-              <Text className="text-gray-400 text-base">
+              <Text className="text-gray-400 text-base font-tektur-semibold">
                 October 25, 2019
               </Text>
             </View>
@@ -75,14 +75,14 @@ const UserProfileScreen = () => {
             <View className="flex-row p-5">
               {/* Age */}
               <View className="flex-1">
-                <Text className="text-gray-400 text-base mb-2">
+                <Text className="text-gray-400 text-base mb-2 font-tektur-semibold">
                   Age
                 </Text>
                 <View className="flex-row items-baseline">
-                  <Text className="text-white text-3xl font-bold">
+                  <Text className="text-white text-3xl font-tektur-semibold">
                     28
                   </Text>
-                  <Text className="text-gray-400 text-base ml-1">
+                  <Text className="text-gray-400 text-base ml-1 font-tektur-semibold">
                     yo
                   </Text>
                 </View>
@@ -96,14 +96,14 @@ const UserProfileScreen = () => {
 
               {/* Height */}
               <View className="flex-1">
-                <Text className="text-gray-400 text-base mb-2">
+                <Text className="text-gray-400 text-base mb-2 font-tektur-semibold">
                   Height
                 </Text>
                 <View className="flex-row items-baseline">
-                  <Text className="text-white text-3xl font-bold">
+                  <Text className="text-white text-3xl font-tektur-semibold">
                     5.97
                   </Text>
-                  <Text className="text-gray-400 text-base ml-1">
+                  <Text className="text-gray-400 text-base ml-1 font-tektur-semibold">
                     ft
                   </Text>
                 </View>
@@ -117,14 +117,14 @@ const UserProfileScreen = () => {
 
               {/* Weight */}
               <View className="flex-1">
-                <Text className="text-gray-400 text-base mb-2">
+                <Text className="text-gray-400 text-base mb-2 font-tektur-semibold">
                   Weight
                 </Text>
                 <View className="flex-row items-baseline">
-                  <Text className="text-white text-3xl font-bold">
+                  <Text className="text-white text-3xl font-tektur-semibold">
                     75
                   </Text>
-                  <Text className="text-gray-400 text-base ml-1">
+                  <Text className="text-gray-400 text-base ml-1 font-tektur-semibold">
                     kilo
                   </Text>
                 </View>
@@ -144,10 +144,10 @@ const UserProfileScreen = () => {
             }}
           >
             <View className="p-5">
-              <Text className="text-white text-xl font-bold mb-4">
+              <Text className="text-white text-xl font-bold mb-4 font-tektur-semibold">
                 About
               </Text>
-              <Text className="text-gray-400 text-base leading-6">
+              <Text className="text-gray-400 text-base font-inter-semibold leading-6">
                 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been industry standard dummy text ever since when an unknown printer took in the galley.
               </Text>
             </View>

@@ -54,10 +54,10 @@ const SuggestedTrainingComponent = () => {
       <ScrollView className="flex-1 pt-6">
         {/* Header */}
         <View className="mb-6">
-          <Text className="text-white text-2xl font-bold mb-3">
+          <Text className="text-white text-2xl font-tektur-semibold- mb-3">
             Suggested Training
           </Text>
-          <Text className="text-gray-400 text-base leading-6">
+          <Text className="text-gray-400 text-base leading-6 font-inter-medium">
             There are many variations of passages of Lorem Ipsum{'\n'}
             but the majority have suffered available
           </Text>
@@ -91,7 +91,7 @@ const SuggestedTrainingComponent = () => {
                 {/* Content */}
                 <View className="flex-1">
                   <View className="flex-row items-start justify-between mb-2">
-                    <Text className="text-white text-lg font-bold flex-1">
+                    <Text className="text-white text-lg font-tektur-semibold flex-1">
                       {training.title}
                     </Text>
                     
@@ -105,7 +105,7 @@ const SuggestedTrainingComponent = () => {
                     </TouchableOpacity>
                   </View>
 
-                  <Text className="text-gray-400 text-sm mb-3 leading-5">
+                  <Text className="text-gray-400 text-sm mb-3 leading-5 font-inter-medium">
                     {training.description}
                   </Text>
 
@@ -113,14 +113,14 @@ const SuggestedTrainingComponent = () => {
                   <View className="flex-row items-center">
                     <View className="flex-row items-center mr-6">
                       <Dumbbell color="#84cc16" size={14} />
-                      <Text className="text-white text-sm ml-2">
+                      <Text className="text-white text-sm ml-2 font-tektur-semibold">
                         {training.exercises}
                       </Text>
                     </View>
                     
                     <View className="flex-row items-center">
                       <Flame color="#84cc16" size={14} />
-                      <Text className="text-white text-sm ml-2">
+                      <Text className="text-white text-sm ml-2 font-tektur-semibold">
                         {training.calories}
                       </Text>
                     </View>

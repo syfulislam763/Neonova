@@ -68,10 +68,10 @@ const FullProfileScreen = () => {
               />
 
               <View>
-                <Text className="text-white text-lg font-bold">
+                <Text className="text-white text-lg font-tektur-semibold">
                   Artus Schulz
                 </Text>
-                <Text className="text-gray-400 text-sm">
+                <Text className="text-gray-400 text-sm font-tektur-semibold">
                   October 25, 2019
                 </Text>
               </View>
@@ -80,7 +80,7 @@ const FullProfileScreen = () => {
             {/* Right - Notification */}
             <TouchableOpacity
               onPress={() => navigation.navigate("EditProfileScreen")}
-              className="w-10 h-10 bg-gray-700/50 rounded-full items-center justify-center"
+              className="w-10 h-10 bg-gray-700/50 rounded-full items-center  justify-center"
               activeOpacity={0.7}
             >
               <Edit color="#84cc16" size={18} />
@@ -98,14 +98,14 @@ const FullProfileScreen = () => {
             <View className="flex-row p-5">
                 {/* Age */}
                 <View className="flex-1">
-                <Text className="text-gray-400 text-base mb-2">
+                <Text className="text-gray-400 text-base mb-2 font-tektur-semibold">
                     Age
                 </Text>
                 <View className="flex-row items-baseline">
-                    <Text className="text-white text-3xl font-bold">
+                    <Text className="text-white text-3xl font-bold font-tektur-semibold">
                     28
                     </Text>
-                    <Text className="text-gray-400 text-base ml-1">
+                    <Text className="text-gray-400 text-base ml-1 font-tektur-semibold">
                     yo
                     </Text>
                 </View>
@@ -119,15 +119,15 @@ const FullProfileScreen = () => {
 
                 {/* Height */}
                 <View className="flex-1">
-                <Text className="text-gray-400 text-base mb-2">
+                <Text className="text-gray-400 text-base font-tektur-semibold mb-2">
                     Height
                 </Text>
                 <View className="flex-row items-baseline">
-                    <Text className="text-white text-3xl font-bold">
-                    5.97
+                    <Text className="text-white text-3xl font-tektur-semibold">
+                      5.97
                     </Text>
-                    <Text className="text-gray-400 text-base ml-1">
-                    ft
+                    <Text className="text-gray-400 text-base ml-1 font-tektur-semibold">
+                      ft
                     </Text>
                 </View>
                 </View>
@@ -140,15 +140,15 @@ const FullProfileScreen = () => {
 
                 {/* Weight */}
                 <View className="flex-1">
-                <Text className="text-gray-400 text-base mb-2">
+                <Text className="text-gray-400 text-base mb-2 font-tektur-semibold">
                     Weight
                 </Text>
                 <View className="flex-row items-baseline">
-                    <Text className="text-white text-3xl font-bold">
-                    75
+                    <Text className="text-white text-3xl font-tektur-semibold">
+                      75
                     </Text>
-                    <Text className="text-gray-400 text-base ml-1">
-                    kilo
+                    <Text className="text-gray-400 text-base ml-1 font-tektur-semibold">
+                      kilo
                     </Text>
                 </View>
                 </View>
@@ -167,10 +167,10 @@ const FullProfileScreen = () => {
             }}
             >
             <View className="p-5">
-                <Text className="text-white text-xl font-bold mb-4">
+                <Text className="text-white text-xl font-tektur-semibold mb-4">
                 About
                 </Text>
-                <Text className="text-gray-400 text-base leading-6">
+                <Text className="text-gray-400 text-base leading-6 font-inter-medium">
                 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been industry standard dummy text ever since when an unknown printer took in the galley.
                 </Text>
             </View>
@@ -191,7 +191,7 @@ const FullProfileScreen = () => {
               onPress={() => setActiveTab('Products')}
               activeOpacity={0.8}
             >
-              <Text className={`text-base font-semibold ${
+              <Text className={`text-base font-semibold font-tektur-semibold${
                 activeTab === 'Products' ? 'text-white' : 'text-gray-400'
               }`}>
                 Products
@@ -209,7 +209,7 @@ const FullProfileScreen = () => {
               onPress={() => setActiveTab('Training')}
               activeOpacity={0.8}
             >
-              <Text className={`text-base font-semibold ${
+              <Text className={`text-base font-semibold font-tektur-semibold ${
                 activeTab === 'Training' ? 'text-white' : 'text-gray-400'
               }`}>
                 Training
@@ -229,7 +229,7 @@ const FullProfileScreen = () => {
             }}
             activeOpacity={0.8}
           >
-            <Text className="text-black text-base font-bold">
+            <Text className="text-black text-base font-tektur-semibold">
               {activeTab=="Products"?"Upload Products":"Upload Training"}
             </Text>
           </TouchableOpacity>
@@ -264,8 +264,8 @@ const FullProfileScreen = () => {
                 <View className="mb-1">
                   <Flame color="#ef4444" size={20} />
                 </View>
-                <Text className="text-white text-xl font-bold">1500 Cal</Text>
-                <Text className="text-gray-400 text-xs">Yesterday</Text>
+                <Text className="text-white text-xl font-tektur-semibold">1500 Cal</Text>
+                <Text className="text-gray-400 text-xs font-tektur-semibold">Yesterday</Text>
               </View>
             </View>
 
@@ -274,25 +274,25 @@ const FullProfileScreen = () => {
               <View className="mb-3">
                 <View className="flex-row items-center mb-1">
                   <View className="w-3 h-3 rounded-full bg-blue-500 mr-2" />
-                  <Text className="text-gray-400 text-xs">Doing Nothing</Text>
+                  <Text className="text-gray-400 text-xs font-tektur-semibold">Doing Nothing</Text>
                 </View>
-                <Text className="text-blue-500 text-base font-bold ml-5">33%</Text>
+                <Text className="text-blue-500 text-base font-tektur-semibold ml-5">33%</Text>
               </View>
 
               <View className="mb-3">
                 <View className="flex-row items-center mb-1">
                   <View className="w-3 h-3 rounded-full bg-lime-500 mr-2" />
-                  <Text className="text-gray-400 text-xs">Training Task</Text>
+                  <Text className="text-gray-400 text-xs font-tektur-semibold">Training Task</Text>
                 </View>
-                <Text className="text-lime-500 text-base font-bold ml-5">33%</Text>
+                <Text className="text-lime-500 text-base font-tektur-semibold ml-5">33%</Text>
               </View>
 
               <View>
                 <View className="flex-row items-center mb-1">
                   <View className="w-3 h-3 rounded-full bg-gray-500 mr-2" />
-                  <Text className="text-gray-400 text-xs">Meal Ratio</Text>
+                  <Text className="text-gray-400 text-xs font-tektur-semibold">Meal Ratio</Text>
                 </View>
-                <Text className="text-gray-500 text-base font-bold ml-5">33%</Text>
+                <Text className="text-gray-500 text-base font-tektur-semibold ml-5">33%</Text>
               </View>
             </View>
           </View>
@@ -301,18 +301,18 @@ const FullProfileScreen = () => {
           <View>
             <View className="flex-row items-center mb-4">
               <Flame color="#ef4444" size={20} fill="#ef4444" />
-              <Text className="text-white text-lg font-bold ml-2">Activity</Text>
+              <Text className="text-white text-lg font-tektur-semibold ml-2">Activity</Text>
             </View>
 
             {/* Activity Stats */}
             <View className="flex-row justify-between mb-4">
               <View>
-                <Text className="text-white text-3xl font-bold">260</Text>
-                <Text className="text-gray-400 text-sm">Daily</Text>
+                <Text className="text-white text-3xl font-tektur-semibold">260</Text>
+                <Text className="text-gray-400 text-sm font-tektur-semibold">Daily</Text>
               </View>
               <View className="items-end">
-                <Text className="text-white text-3xl font-bold">1731</Text>
-                <Text className="text-gray-400 text-sm">This Week</Text>
+                <Text className="text-white text-3xl font-tektur-semibold">1731</Text>
+                <Text className="text-gray-400 text-sm font-tektur-semibold">This Week</Text>
               </View>
             </View>
 
@@ -327,7 +327,7 @@ const FullProfileScreen = () => {
                       height: item.height 
                     }}
                   />
-                  <Text className="text-gray-400 text-xs">{item.day}</Text>
+                  <Text className="text-gray-400 text-xs font-tektur-semibold">{item.day}</Text>
                 </View>
               ))}
             </View>

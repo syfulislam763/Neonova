@@ -21,7 +21,7 @@ const WhatYoullLearnComponent = () => {
       
       <ScrollView className="flex-1 px-5 pt-6">
         {/* Header */}
-        <Text className="text-white text-2xl font-bold mb-6">
+        <Text className="text-white text-2xl font-tektur-semibold mb-6">
           What you'll learn
         </Text>
 
@@ -36,7 +36,7 @@ const WhatYoullLearnComponent = () => {
               
               {/* Text Content */}
               <View className="flex-1">
-                <Text className="text-gray-300 text-base leading-6">
+                <Text className="text-gray-300 font-tektur-semibold text-base leading-6">
                   {point}
                 </Text>
               </View>

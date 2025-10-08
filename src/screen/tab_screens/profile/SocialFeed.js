@@ -43,17 +43,17 @@ const SocialPostCard = ({
           className="w-12 h-12 rounded-full mr-3"
         />
         <View className="flex-1">
-          <Text className="text-white text-base font-semibold">
+          <Text className="text-white text-base font-tektur-semibold">
             {userName}
           </Text>
-          <Text className="text-gray-400 text-sm">
+          <Text className="text-gray-400 font-tektur-semibold text-sm">
             {timeAgo}
           </Text>
         </View>
       </View>
 
       {/* Post Text */}
-      <Text className="text-white text-base mb-4 leading-6">
+      <Text className="text-white text-base mb-4 font-tektur-semibold leading-6">
         {postText}
       </Text>
 
@@ -80,7 +80,7 @@ const SocialPostCard = ({
               className="w-6 h-6 rounded-full border-2 border-slate-800 -ml-2"
             />
           </View>
-          <Text className="text-gray-400 text-sm">
+          <Text className="text-gray-400 text-sm font-tektur-semibold">
             {likedBy}
           </Text>
         </View>
@@ -98,7 +98,7 @@ const SocialPostCard = ({
             size={22} 
             fill="#ef4444"
           />
-          <Text className="text-white text-base ml-2 mr-8">
+          <Text className="text-white text-base ml-2 mr-8 font-tektur-semibold">
             {likes}
           </Text>
         </TouchableOpacity>
@@ -109,7 +109,7 @@ const SocialPostCard = ({
           activeOpacity={0.7}
         >
           <MessageCircle color="#9ca3af" size={22} />
-          <Text className="text-gray-400 text-base ml-2 mr-8">
+          <Text className="text-gray-400 text-base ml-2 mr-8 font-tektur-semibold">
             {comments}
           </Text>
         </TouchableOpacity>
@@ -120,7 +120,7 @@ const SocialPostCard = ({
           activeOpacity={0.7}
         >
           <Share color="#9ca3af" size={22} />
-          <Text className="text-gray-400 text-base ml-2">
+          <Text className="text-gray-400 text-base ml-2 font-tektur-semibold">
             {shares}
           </Text>
         </TouchableOpacity>

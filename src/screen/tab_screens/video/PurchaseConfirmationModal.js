@@ -59,12 +59,12 @@ const PurchaseConfirmationModal = ({modalVisible, setModalVisible}) => {
             >
               <View className="p-6">
                 {/* Modal Title */}
-                <Text className="text-white text-xl font-bold text-center mb-4 leading-7">
+                <Text className="text-white text-xl font-tektur-semibold text-center mb-4 leading-7">
                   Are you sure you want to buy{'\n'}this training course?
                 </Text>
 
                 {/* Modal Description */}
-                <Text className="text-gray-400 text-base text-center mb-8 leading-6">
+                <Text className="text-gray-400 text-base font-inter-regular text-center mb-8 leading-6">
                   There are many variations of passages of Lorem{'\n'}
                   Ipsum available, but the majority...
                 </Text>
@@ -76,7 +76,7 @@ const PurchaseConfirmationModal = ({modalVisible, setModalVisible}) => {
                     onPress={handleBuyNow}
                     activeOpacity={0.8}
                   >
-                    <Text className="text-black text-base font-semibold">
+                    <Text className="text-black text-base font-tektur-semibold">
                       Buy $89
                     </Text>
                   </TouchableOpacity>
@@ -87,7 +87,7 @@ const PurchaseConfirmationModal = ({modalVisible, setModalVisible}) => {
                     onPress={handleNotNow}
                     activeOpacity={0.8}
                   >
-                    <Text className="text-white text-base font-semibold">
+                    <Text className="text-white text-base font-tektur-semibold">
                       Not Now
                     </Text>
                   </TouchableOpacity>

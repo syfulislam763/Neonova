@@ -26,7 +26,7 @@ export default function AddProductScreenTwo() {
           >
             <ChevronLeft size={24} color="#FFFFFF" strokeWidth={2} />
           </TouchableOpacity>
-          <Text className="text-white text-xl font-semibold ml-2">
+          <Text className="text-white text-xl font-tektur-semibold ml-2">
             Add Product
           </Text>
         </View>
@@ -35,7 +35,7 @@ export default function AddProductScreenTwo() {
         <View className="px-5">
           {/* Title */}
           <View className="mb-5">
-            <Text className="text-white text-sm font-medium mb-2">
+            <Text className="text-white text-sm font-tektur-semibold mb-2">
               Title
             </Text>
             <TextInput
@@ -48,7 +48,7 @@ export default function AddProductScreenTwo() {
 
           {/* Description */}
           <View className="mb-5">
-            <Text className="text-white text-sm font-medium mb-2">
+            <Text className="text-white text-sm font-inter-medium mb-2">
               Description
             </Text>
             <TextInput
@@ -65,7 +65,7 @@ export default function AddProductScreenTwo() {
 
           {/* Weight */}
           <View className="mb-5">
-            <Text className="text-white text-sm font-medium mb-2">
+            <Text className="text-white text-sm font-tektur-semibold mb-2">
               Weight
             </Text>
             <TextInput
@@ -78,14 +78,14 @@ export default function AddProductScreenTwo() {
 
           {/* Category */}
           <View className="mb-5">
-            <Text className="text-white text-sm font-medium mb-2">
+            <Text className="text-white text-sm font-tektur-semibold mb-2">
               Category
             </Text>
             <TouchableOpacity
               className="bg-[#0F1C2E] rounded-xl px-4 py-3.5 flex-row items-center justify-between"
               activeOpacity={0.7}
             >
-              <Text className="text-[#8B9AAF] text-sm">
+              <Text className="text-[#8B9AAF] text-sm font-tektur-semibold">
                 {category}
               </Text>
               <ChevronDown size={20} color="#8B9AAF" strokeWidth={2} />
@@ -94,7 +94,7 @@ export default function AddProductScreenTwo() {
 
           {/* Brand */}
           <View className="mb-5">
-            <Text className="text-white text-sm font-medium mb-2">
+            <Text className="text-white text-sm font-tektur-semibold mb-2">
               Brand
             </Text>
             <TextInput
@@ -107,7 +107,7 @@ export default function AddProductScreenTwo() {
 
           {/* Color */}
           <View className="mb-5">
-            <Text className="text-white text-sm font-medium mb-2">
+            <Text className="text-white text-sm font-tektur-semibold mb-2">
               Color
             </Text>
             <TextInput
@@ -126,7 +126,7 @@ export default function AddProductScreenTwo() {
           className="bg-[#C1F24E] rounded-2xl h-14 items-center justify-center"
           activeOpacity={0.8}
         >
-          <Text className="text-[#0B1421] text-base font-bold">
+          <Text className="text-[#0B1421] text-base font-tektur-semibold">
             Upload
           </Text>
         </TouchableOpacity>

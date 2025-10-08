@@ -63,10 +63,10 @@ const TrainingEpisodeComponent = () => {
       <View className="flex-1 pt-6">
         {/* Header */}
         <View className="flex-row items-center justify-between mb-4">
-          <Text className="text-white text-2xl font-bold">
+          <Text className="text-white text-2xl font-tektur-semibold">
             Training Episode
           </Text>
-          <Text className="text-gray-400 text-base">
+          <Text className="text-gray-400 text-base font-tektur-semibold">
             1/5
           </Text>
         </View>
@@ -75,11 +75,11 @@ const TrainingEpisodeComponent = () => {
         <View className="flex-row items-center justify-between mb-6">
           <View className="flex-row items-center">
             <Clock color="#9ca3af" size={16} />
-            <Text className="text-gray-400 text-base ml-2">
+            <Text className="text-gray-400 font-tektur-semibold text-base ml-2">
               Training Duration
             </Text>
           </View>
-          <Text className="text-lime-500 text-base font-semibold">
+          <Text className="text-lime-500 text-base font-tektur-semibold">
             1 hrs 30 min
           </Text>
         </View>
@@ -111,11 +111,11 @@ const TrainingEpisodeComponent = () => {
 
                 {/* Content */}
                 <View className="flex-1">
-                  <Text className="text-white text-lg font-bold mb-2">
+                  <Text className="text-white text-lg font-tektur-semibold mb-2">
                     {episode.title}
                   </Text>
 
-                  <Text className="text-gray-400 text-sm mb-3 leading-5">
+                  <Text className="text-gray-400 text-sm mb-3 leading-5 font-tektur-semibold">
                     {episode.description}
                   </Text>
 
@@ -126,7 +126,7 @@ const TrainingEpisodeComponent = () => {
                     activeOpacity={0.7}
                   >
                     <Unlock color="#84cc16" size={14} />
-                    <Text className="text-lime-500 text-sm ml-2 font-medium">
+                    <Text className="text-lime-500 text-sm ml-2 font-tektur-semibold">
                       {episode.unlockText}
                     </Text>
                   </TouchableOpacity>
@@ -155,7 +155,7 @@ const TrainingEpisodeComponent = () => {
               <View className="mr-4">
                 <View className="w-20 h-20 bg-red-600 rounded-xl items-center justify-center">
                   <View className="bg-white rounded px-2 py-1">
-                    <Text className="text-red-600 text-xs font-bold">
+                    <Text className="text-red-600 text-xs font-bold font-tektur-semibold">
                       PDF
                     </Text>
                   </View>
@@ -164,11 +164,11 @@ const TrainingEpisodeComponent = () => {
 
               {/* Content */}
               <View className="flex-1">
-                <Text className="text-white text-lg font-bold mb-2">
+                <Text className="text-white text-lg font-bold mb-2 font-tektur-semibold">
                   {pdfItem.title}
                 </Text>
 
-                <Text className="text-gray-400 text-sm mb-3 leading-5">
+                <Text className="text-gray-400 text-sm mb-3 leading-5 font-inter-medium">
                   {pdfItem.description}
                 </Text>
 
@@ -179,7 +179,7 @@ const TrainingEpisodeComponent = () => {
                   activeOpacity={0.7}
                 >
                   <Unlock color="#84cc16" size={14} />
-                  <Text className="text-lime-500 text-sm ml-2 font-medium">
+                  <Text className="text-lime-500 text-sm ml-2 font-tektur-semibold">
                     {pdfItem.unlockText}
                   </Text>
                 </TouchableOpacity>

@@ -66,13 +66,14 @@ const ChatConversationScreen = () => {
           </TouchableOpacity>
           
           <View className="flex-1">
-            <Text className="text-white text-lg font-bold">
+            <Text className="text-white text-lg font-tektur-semibold">
               Leslie Alexander
             </Text>
-            <Text className="text-gray-400 text-xs">
+            <Text className="text-gray-400 text-xs font-tektur-semibold">
               Typing...
             </Text>
           </View>
+          
         </View>
         
         <Image
@@ -109,12 +110,12 @@ const ChatConversationScreen = () => {
                   : 'bg-[#2a3441] rounded-br-3xl rounded-tl-3xl rounded-tr-3xl'
               }`}
             >
-              <Text className={`text-base leading-6 ${
+              <Text className={`text-base leading-6 font-tektur-semibold ${
                 msg.isSent ? 'text-black' : 'text-white'
               }`}>
                 {msg.text}
               </Text>
-              <Text className={`text-xs mt-2 text-right ${
+              <Text className={`text-xs mt-2 text-right font-tektur-semibold ${
                 msg.isSent ? 'text-black/70' : 'text-gray-400'
               }`}>
                 {msg.time}

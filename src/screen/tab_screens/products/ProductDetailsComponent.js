@@ -33,13 +33,13 @@ const ProductDetailsComponent = () => {
       
       <ScrollView className="flex-1 ">
         {/* Product Details Title */}
-        <Text className="text-white text-2xl font-bold mb-6">
+        <Text className="text-white text-2xl font-tektur-semibold mb-6">
           Product details
         </Text>
 
         {/* Weight Section */}
         <View className="mb-6">
-          <Text className="text-white text-lg font-medium mb-4">
+          <Text className="text-white text-lg font-tektur-semibold mb-4">
             Weight
           </Text>
           <View className="flex-row flex-wrap gap-3">
@@ -58,7 +58,7 @@ const ProductDetailsComponent = () => {
                 onPress={() => setSelectedWeight(weight)}
                 activeOpacity={0.8}
               >
-                <Text className="text-gray-300 text-base">
+                <Text className="text-gray-300 font-tektur-semibold text-base">
                   {weight}
                 </Text>
               </TouchableOpacity>
@@ -74,10 +74,10 @@ const ProductDetailsComponent = () => {
 
         {/* Category Section */}
         <View className="flex-row items-center justify-between mb-6">
-          <Text className="text-white text-lg font-medium">
+          <Text className="text-white text-lg font-tektur-semibold">
             Category
           </Text>
-          <Text className="text-gray-400 text-base">
+          <Text className="text-gray-400 text-base font-tektur-semibold">
             Supplement
           </Text>
         </View>
@@ -90,10 +90,10 @@ const ProductDetailsComponent = () => {
 
         {/* Brand Section */}
         <View className="flex-row items-center justify-between mb-6">
-          <Text className="text-white text-lg font-medium">
+          <Text className="text-white text-lg font-tektur-semibold">
             Brand
           </Text>
-          <Text className="text-gray-400 text-base">
+          <Text className="text-gray-400 text-base font-tektur-semibold">
             Best Body
           </Text>
         </View>
@@ -106,7 +106,7 @@ const ProductDetailsComponent = () => {
 
         {/* Color Section */}
         <View className="mb-8">
-          <Text className="text-white text-lg font-medium mb-4">
+          <Text className="text-white text-lg font-tektur-semibold mb-4">
             Color
           </Text>
           
@@ -127,7 +127,7 @@ const ProductDetailsComponent = () => {
                   }`}
                   style={{ backgroundColor: color.code }}
                 />
-                <Text className="text-gray-400 text-sm">
+                <Text className="text-gray-400 font-tektur-semibold text-sm">
                   {color.name}
                 </Text>
               </TouchableOpacity>
@@ -151,7 +151,7 @@ const ProductDetailsComponent = () => {
                   }`}
                   style={{ backgroundColor: color.code }}
                 />
-                <Text className="text-gray-400 text-sm">
+                <Text className="text-gray-400 text-sm font-tektur-semibold">
                   {color.name}
                 </Text>
               </TouchableOpacity>

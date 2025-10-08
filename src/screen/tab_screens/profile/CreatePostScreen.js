@@ -44,7 +44,7 @@ const CreatePostScreen = () => {
         >
           <ChevronLeft color="#ffffff" size={28} />
         </TouchableOpacity>
-        <Text className="text-white text-2xl font-bold">
+        <Text className="text-white text-2xl font-tektur-semibold">
           Post
         </Text>
       </View>
@@ -52,7 +52,7 @@ const CreatePostScreen = () => {
       <ScrollView className="flex-1 px-5 mt-5">
         {/* Upload Image Section */}
         <View className="mb-1">
-          <Text className="text-white text-base font-medium mb-3">
+          <Text className="text-white text-base font-tektur-semibold mb-3">
             Upload image
           </Text>
           
@@ -72,7 +72,7 @@ const CreatePostScreen = () => {
             >
               <View className="flex-1 items-center justify-center">
                 <ImageIcon color="#9ca3af" size={32} />
-                <Text className="text-gray-400 text-base mt-3">
+                <Text className="text-gray-400 text-base font-tektur-semibold mt-3">
                   Upload Image
                 </Text>
               </View>
@@ -82,7 +82,7 @@ const CreatePostScreen = () => {
 
         {/* Name Section */}
         <View className="mb-6">
-          <Text className="text-white text-base font-medium mb-3">
+          <Text className="text-white text-base font-tektur-semibold mb-3">
             Name
           </Text>
           
@@ -108,7 +108,7 @@ const CreatePostScreen = () => {
 
         {/* Description Section */}
         <View className="mb-8">
-          <Text className="text-white text-base font-medium mb-3">
+          <Text className="text-white text-base font-tektur-semibold mb-3">
             Description
           </Text>
           
@@ -144,7 +144,7 @@ const CreatePostScreen = () => {
           onPress={handlePost}
           activeOpacity={0.8}
         >
-          <Text className="text-black text-lg font-bold">
+          <Text className="text-black text-lg font-tektur-semibold">
             Post
           </Text>
         </TouchableOpacity>

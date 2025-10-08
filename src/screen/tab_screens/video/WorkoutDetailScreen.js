@@ -54,13 +54,13 @@ const WorkoutDetailScreen = ({modalVisible, setModalVisible}) => {
           {/* Content Container */}
           <View className="flex-1 justify-end">
             {/* Title */}
-            <Text className="text-white text-3xl px-7 font-bold mb-4 leading-10">
+            <Text className="text-white text-3xl px-7 font-tektur-semibold mb-4 leading-10">
               Forearm and abdominal{'\n'}strengthening
             </Text>
 
             {/* Description */}
             <BlurView intensity={10} tint='dark' className="px-7">
-                <Text className="text-gray-300 text-base mb-6 leading-6">
+                <Text className="text-gray-300 text-base mb-6 font-inter-medium leading-6">
                     There are many variations of passages of Lorem Ipsum{'\n'}
                     but the majority have suffered available
                 </Text>
@@ -69,21 +69,21 @@ const WorkoutDetailScreen = ({modalVisible, setModalVisible}) => {
                 <View className="flex-row items-center mb-4">
                 <View className="flex-row items-center mr-8">
                     <Dumbbell color="#84cc16" size={18} />
-                    <Text className="text-white text-base ml-2 font-medium">
+                    <Text className="text-white text-base ml-2 font-tektur-semibold">
                     10 Exercise
                     </Text>
                 </View>
                 
                 <View className="flex-row items-center mr-8">
                     <PlayCircle color="#84cc16" size={18} />
-                    <Text className="text-white text-base ml-2 font-medium">
+                    <Text className="text-white text-base ml-2 font-tektur-semibold">
                     5 Lesson
                     </Text>
                 </View>
                 
                 <View className="flex-row items-center">
                     <Flame color="#84cc16" size={18} />
-                    <Text className="text-white text-base ml-2 font-medium">
+                    <Text className="text-white text-base ml-2 font-tektur-semibold">
                     160k cal
                     </Text>
                 </View>
@@ -93,14 +93,14 @@ const WorkoutDetailScreen = ({modalVisible, setModalVisible}) => {
                 <View className="flex-row items-center justify-between mb-8">
                 <View className="flex-row items-center">
                     <Clock color="#84cc16" size={18} />
-                    <Text className="text-white text-base ml-2 font-medium">
+                    <Text className="text-white text-base ml-2 font-tektur-semibold">
                     1 hrs 30 min
                     </Text>
                 </View>
                 
                 <View className="flex-row items-center">
                     <Star color="#fbbf24" size={18} fill="#fbbf24" />
-                    <Text className="text-white text-base ml-2 font-medium">
+                    <Text className="text-white text-base ml-2 font-tektur-semibold">
                     4.7 (12)
                     </Text>
                 </View>
@@ -113,7 +113,7 @@ const WorkoutDetailScreen = ({modalVisible, setModalVisible}) => {
                 activeOpacity={0.8}
                 >
                 <ShoppingCart color="#000000" size={20} />
-                <Text className="text-black text-lg font-bold ml-2">
+                <Text className="text-black text-lg font-bold ml-2 font-tektur-semibold">
                     Buy $89
                 </Text>
                 </TouchableOpacity>

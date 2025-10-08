@@ -68,13 +68,13 @@ const UserProfileCard = ({
             source={{ uri: userAvatar }}
             className="w-12 h-12 rounded-full mr-3"
           />
-          <Text className="text-white text-xl font-bold">
+          <Text className="text-white text-xl font-tektur-semibold">
             {userName}
           </Text>
         </View>
 
         {/* Description */}
-        <Text className="text-gray-400 text-base mb-4 leading-6">
+        <Text className="text-gray-400 text-base font-tektur-semibold mb-4 leading-6">
           {description}
         </Text>
 
@@ -83,7 +83,7 @@ const UserProfileCard = ({
           <View className="flex-row">
             {renderStars()}
           </View>
-          <Text className="text-lime-500 text-base font-semibold">
+          <Text className="text-lime-500 text-base font-tektur-semibold">
             {rating} ({totalReviews} People)
           </Text>
         </View>
@@ -95,7 +95,7 @@ const UserProfileCard = ({
             onPress={() => navigation.navigate("UserProfileScreen")}
             activeOpacity={0.8}
           >
-            <Text className="text-black text-base font-bold">
+            <Text className="text-black text-base font-tektur-semibold">
               View Profile
             </Text>
           </TouchableOpacity>
@@ -106,7 +106,7 @@ const UserProfileCard = ({
             onPress={handleMessage}
             activeOpacity={0.8}
           >
-            <Text className="text-white text-base font-bold">
+            <Text className="text-white text-base font-tektur-semibold">
               Message
             </Text>
           </TouchableOpacity>

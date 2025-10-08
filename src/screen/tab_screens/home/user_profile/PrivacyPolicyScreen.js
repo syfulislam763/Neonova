@@ -52,26 +52,26 @@ const PrivacyPolicyScreen = () => {
       >
         {/* First Section */}
         <View className="mb-8">
-          <Text className="text-white text-xl font-bold mb-4">
+          <Text className="text-white text-xl font-tektur-semibold mb-4">
             Training Session
           </Text>
-          <Text className="text-gray-400 text-sm leading-6 mb-4">
+          <Text className="text-gray-400 text-sm leading-6 mb-4 font-inter-medium">
             It is a long established fact that a reader will distracted by the readable content of page when looking its layout. The point of using Lorem Ipsum is that it has normal distribution of letters as opposed to using Content here content here making it look like readable English.
           </Text>
-          <Text className="text-gray-400 text-sm leading-6">
+          <Text className="text-gray-400 text-sm leading-6 font-inter-medium">
             It is a long established fact that a reader will by readable content of page when looking its layout. The point of using Lorem Ipsum is that has normal distribution letters as opposed to using Content here content here making it look like readable English.
           </Text>
         </View>
 
         {/* Second Section */}
         <View className="mb-8">
-          <Text className="text-white text-xl font-bold mb-4">
+          <Text className="text-white text-xl font-tektur-semibold mb-4">
             Training Session
           </Text>
-          <Text className="text-gray-400 text-sm leading-6 mb-4">
+          <Text className="text-gray-400 text-sm leading-6 mb-4 font-inter-medium">
             It is a long established fact that a reader will distracted by the readable content of page when looking its layout. The point of using Lorem Ipsum is that it has normal distribution of letters as opposed to using Content here content here making it look like readable English.
           </Text>
-          <Text className="text-gray-400 text-sm leading-6 mb-8">
+          <Text className="text-gray-400 text-sm font-inter-medium leading-6 mb-8">
             It is a long established fact that a reader will by readable content of page when looking its layout. The point of using Lorem Ipsum is that has normal distribution letters as opposed to using Content here content here making it look like readable English.
           </Text>
         </View>
@@ -89,8 +89,8 @@ const PrivacyPolicyScreen = () => {
               <Text className="text-black text-xs font-bold">✓</Text>
             )}
           </View>
-          <Text className="text-gray-300 text-sm flex-1">
-            By agreeing to the <Text className="text-[#a3e635] font-semibold">Terms & Condition</Text>
+          <Text className="text-gray-300 text-sm flex-1 font-tektur-semibold">
+            By agreeing to the <Text className="text-[#a3e635] font-tektur-semibold">Terms & Condition</Text>
           </Text>
         </TouchableOpacity>
 
@@ -102,7 +102,7 @@ const PrivacyPolicyScreen = () => {
           activeOpacity={0.8}
           disabled={!isAgreed}
         >
-          <Text className={`text-center text-base font-bold ${
+          <Text className={`text-center text-base font-tektur-semibold ${
             isAgreed ? 'text-black' : 'text-gray-400'
           }`}>
             Accept Agreement

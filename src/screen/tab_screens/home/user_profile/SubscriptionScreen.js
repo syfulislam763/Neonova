@@ -38,7 +38,7 @@ const SubscriptionScreen = () => {
             <ChevronLeft size={24} color="#fff" strokeWidth={2.5} />
           </TouchableOpacity>
           
-          <Text className="text-white text-xl font-bold">
+          <Text className="text-white text-xl font-tektur-semibold">
             Subscription
           </Text>
           
@@ -58,10 +58,10 @@ const SubscriptionScreen = () => {
 
         {/* Title and Description */}
         <View className="px-6 pb-8">
-          <Text className="text-white text-2xl font-bold text-center mb-3">
+          <Text className="text-white text-2xl font-tektur-semibold text-center mb-3">
             Get Pro Subscription
           </Text>
-          <Text className="text-gray-400 text-sm text-center leading-5">
+          <Text className="text-gray-400 text-sm text-center font-inter-medium leading-5">
             There are many variations of passages of Lorem Ipsum but the majority have suffered available
           </Text>
         </View>
@@ -75,7 +75,7 @@ const SubscriptionScreen = () => {
             onPress={() => setSelectedPlan('monthly')}
             activeOpacity={0.7}
           >
-            <Text className={`text-center font-semibold ${
+            <Text className={`text-center font-tektur-semibold ${
               selectedPlan === 'monthly' ? 'text-white' : 'text-gray-500'
             }`}>
               Monthly
@@ -89,7 +89,7 @@ const SubscriptionScreen = () => {
             onPress={() => setSelectedPlan('yearly')}
             activeOpacity={0.7}
           >
-            <Text className={`text-center font-semibold ${
+            <Text className={`text-center font-tektur-semibold ${
               selectedPlan === 'yearly' ? 'text-white' : 'text-gray-500'
             }`}>
               yearly
@@ -101,19 +101,19 @@ const SubscriptionScreen = () => {
         <View className="mx-6 mb-8 bg-[#141f29] rounded-3xl p-6">
           {/* Card Header */}
           <View className="flex-row justify-between items-center mb-6">
-            <Text className="text-gray-400 text-lg font-semibold">
+            <Text className="text-gray-400 text-lg font-tektur-semibold">
               Starter Plan
             </Text>
             <View className="bg-[#a3e635] px-4 py-1.5 rounded-lg flex-row items-center">
               <Crown size={16} color="#000" fill="#000" strokeWidth={2.5} />
-              <Text className="text-black font-bold ml-1">Get Pro</Text>
+              <Text className="text-black font-bold ml-1 font-tektur-semibold">Get Pro</Text>
             </View>
           </View>
 
           {/* Price */}
           <View className="flex-row items-end mb-6">
-            <Text className="text-white text-4xl font-bold">$200</Text>
-            <Text className="text-gray-400 text-base mb-1 ml-2">/ Monthly</Text>
+            <Text className="text-white text-4xl font-tektur-semibold">$200</Text>
+            <Text className="text-gray-400 text-base mb-1 ml-2 font-tektur-semibold">/ Monthly</Text>
           </View>
 
           {/* Features List */}
@@ -123,7 +123,7 @@ const SubscriptionScreen = () => {
                 <View className="w-5 h-5 rounded-full bg-[#a3e635] items-center justify-center mr-3 mt-0.5">
                   <Text className="text-black text-xs font-bold">✓</Text>
                 </View>
-                <Text className="text-gray-300 text-sm flex-1 leading-5">
+                <Text className="text-gray-300 text-sm flex-1 font-tektur-semibold leading-5">
                   {feature}
                 </Text>
               </View>
@@ -135,7 +135,7 @@ const SubscriptionScreen = () => {
             className="bg-[#a3e635] py-4 rounded-2xl flex-row items-center justify-center"
             activeOpacity={0.8}
           >
-            <Text className="text-black text-base font-bold mr-2">
+            <Text className="text-black text-base font-tektur-semibold mr-2">
               Upgrade Plan
             </Text>
             <ArrowRight size={20} color="#000" strokeWidth={3} />

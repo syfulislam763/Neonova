@@ -16,13 +16,13 @@ const TrainerProfileComponent = () => {
         {/* Header Row */}
         <View className="flex-row items-center justify-between mb-6">
           <View className="flex-row items-center">
-            <Text className="text-white text-2xl font-bold mr-4">
+            <Text className="text-white text-2xl font-tektur-semibold mr-4">
               Trainer
             </Text>
             
           </View>
           
-          <Text className="text-lime-500 text-lg font-semibold">
+          <Text className="text-lime-500 text-lg font-tektur-semibold">
             Ibrahim Afridi
           </Text>
         </View>
@@ -47,11 +47,11 @@ const TrainerProfileComponent = () => {
                         {/* Overall Rating */}
                         <View className="flex-row items-center flex-1">
                         <Star color="#84cc16" size={16} fill="#84cc16" />
-                        <Text className="text-gray-400 text-base ml-2">
+                        <Text className="text-gray-400 font-tektur-semibold text-base ml-2">
                             Overall Rating
                         </Text>
                         </View>
-                        <Text className="text-white text-base font-medium">
+                        <Text className="text-white text-base font-tektur-semibold">
                         4.7
                         </Text>
                     </View>
@@ -61,11 +61,11 @@ const TrainerProfileComponent = () => {
                         {/* Total Reviews */}
                         <View className="flex-row items-center flex-1">
                         <Shield color="#84cc16" size={16} />
-                        <Text className="text-gray-400 text-base ml-2">
+                        <Text className="text-gray-400 text-base font-tektur-semibold ml-2">
                             Total Reviews
                         </Text>
                         </View>
-                        <Text className="text-white text-base font-medium">
+                        <Text className="text-white text-base font-tektur-semibold">
                         23K+ Review
                         </Text>
                     </View>
@@ -75,11 +75,11 @@ const TrainerProfileComponent = () => {
                         {/* Fitness Learner */}
                         <View className="flex-row items-center flex-1">
                         <Users color="#84cc16" size={16} />
-                        <Text className="text-gray-400 text-base ml-2">
+                        <Text className="text-gray-400 font-tektur-semibold text-base ml-2">
                             Fitness Learner
                         </Text>
                         </View>
-                        <Text className="text-white text-base font-medium">
+                        <Text className="text-white text-base font-tektur-semibold">
                         13k
                         </Text>
                     </View>
@@ -89,11 +89,11 @@ const TrainerProfileComponent = () => {
                         {/* Total Courses */}
                         <View className="flex-row items-center flex-1">
                         <BookOpen color="#84cc16" size={16} />
-                        <Text className="text-gray-400 text-base ml-2">
+                        <Text className="text-gray-400 font-tektur-semibold text-base ml-2">
                             Total Courses
                         </Text>
                         </View>
-                        <Text className="text-white text-base font-medium">
+                        <Text className="text-white text-base font-tektur-semibold">
                         67 Available
                         </Text>
                     </View>

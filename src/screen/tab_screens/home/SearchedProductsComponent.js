@@ -63,10 +63,10 @@ const SearchedProductsComponent = () => {
       <ScrollView className="flex-1 px-5 pt-6">
         {/* Header */}
         <View className="mb-6">
-          <Text className="text-white text-2xl font-bold mb-3">
+          <Text className="text-white text-2xl font-tektur-semibold mb-3">
             Searched Products
           </Text>
-          <Text className="text-gray-400 text-base leading-6">
+          <Text className="text-gray-400 text-base leading-6 font-inter-medium">
             There are many variations of passages of Lorem Ipsum{'\n'}
             but the majority have suffered available
           </Text>
@@ -113,17 +113,17 @@ const SearchedProductsComponent = () => {
                   </View>
 
                   {/* Product Title */}
-                  <Text className="text-white text-base font-bold text-center mb-2">
+                  <Text className="text-white text-base font-tektur-semibold text-center mb-2">
                     {product.title}
                   </Text>
 
                   {/* Product Description */}
-                  <Text className="text-gray-400 text-xs text-center mb-4 leading-4">
+                  <Text className="text-gray-400 text-xs text-center mb-4 leading-4 font-inter-medium">
                     {product.description}
                   </Text>
 
                   {/* Product Price */}
-                  <Text className="text-lime-500 text-lg font-bold text-center">
+                  <Text className="text-lime-500 text-lg font-tektur-semibold text-center">
                     {product.price}
                   </Text>
                 </View>

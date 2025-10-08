@@ -103,10 +103,10 @@ const ProfileScreen = () => {
           </View>
 
           {/* Name and Email */}
-          <Text className="text-white text-2xl font-bold mb-1">
+          <Text className="text-white text-2xl font-tektur-semibold mb-1">
             Artus Schulz
           </Text>
-          <Text className="text-gray-400 text-sm">
+          <Text className="text-gray-400 font-tektur-semibold text-sm">
             ibrahimafrid1947@gmail.com
           </Text>
         </View>
@@ -127,10 +127,10 @@ const ProfileScreen = () => {
 
               {/* Text Content */}
               <View className="flex-1">
-                <Text className="text-white text-base font-semibold mb-1">
+                <Text className="text-white text-base font-tektur-semibold mb-1">
                   {item.title}
                 </Text>
-                <Text className="text-gray-500 text-xs">
+                <Text className="text-gray-500 text-xs font-tektur-semibold">
                   {item.description}
                 </Text>
               </View>
@@ -152,10 +152,10 @@ const ProfileScreen = () => {
 
             {/* Text Content */}
             <View className="flex-1">
-              <Text className="text-white text-base font-semibold mb-1">
+              <Text className="text-white text-base font-tektur-semibold mb-1">
                 Logout
               </Text>
-              <Text className="text-gray-500 text-xs">
+              <Text className="text-gray-500 text-xs font-tektur-semibold">
                 Lorem Ipsum is simply text of the printing.
               </Text>
             </View>

@@ -45,7 +45,7 @@ const ProductsHeaderScreen = () => {
           {/* Left Side - Back Button and Title */}
           <View className="flex-row items-center flex-1">
             
-            <Text className="text-white text-3xl font-bold">
+            <Text className="text-white text-3xl font-tektur-semibold">
               Products
             </Text>
           </View>
@@ -109,10 +109,10 @@ const ProductsHeaderScreen = () => {
       <ScrollView className="flex-1 py-5">
         {/* Searched Products Header */}
         <View className="mb-6">
-          <Text className="text-white text-2xl font-bold mb-3">
+          <Text className="text-white text-2xl font-tektur-semibold mb-3">
             Searched Products
           </Text>
-          <Text className="text-gray-400 text-base leading-6">
+          <Text className="text-gray-400 text-base font-inter-medium leading-6">
             There are many variations of passages of Lorem Ipsum{'\n'}
             but the majority have suffered available
           </Text>

@@ -24,7 +24,7 @@ export default function UploadTrainingScreen() {
           >
             <ChevronLeft size={24} color="#FFFFFF" strokeWidth={2} />
           </TouchableOpacity>
-          <Text className="text-white text-xl font-semibold ml-2">
+          <Text className="text-white text-xl font-tektur-semibold ml-2">
             Upload Training
           </Text>
         </View>
@@ -33,7 +33,7 @@ export default function UploadTrainingScreen() {
         <View className="px-5">
           {/* Upload Thumbnail */}
           <View className="mb-5">
-            <Text className="text-white text-sm font-medium mb-2">
+            <Text className="text-white text-sm font-tektur-semibold mb-2">
               Upload Thumbnail
             </Text>
             <TouchableOpacity
@@ -44,7 +44,7 @@ export default function UploadTrainingScreen() {
               <View className="w-10 h-10 rounded-lg border border-[#4A5D7A] items-center justify-center mb-2">
                 <Plus size={24} color="#6B7D96" strokeWidth={2} />
               </View>
-              <Text className="text-[#6B7D96] text-sm">
+              <Text className="text-[#6B7D96] text-sm font-tektur-semibold">
                 Upload Video
               </Text>
             </TouchableOpacity>
@@ -52,7 +52,7 @@ export default function UploadTrainingScreen() {
 
           {/* Title */}
           <View className="mb-5">
-            <Text className="text-white text-sm font-medium mb-2">
+            <Text className="text-white text-sm font-tektur-semibold mb-2">
               Title
             </Text>
             <TextInput
@@ -65,7 +65,7 @@ export default function UploadTrainingScreen() {
 
           {/* Description */}
           <View className="mb-5">
-            <Text className="text-white text-sm font-medium mb-2">
+            <Text className="text-white text-sm font-tektur-semibold mb-2">
               Description
             </Text>
             <TextInput
@@ -82,7 +82,7 @@ export default function UploadTrainingScreen() {
 
           {/* Exercise Count */}
           <View className="mb-5">
-            <Text className="text-white text-sm font-medium mb-2">
+            <Text className="text-white text-sm font-tektur-semibold mb-2">
               Exercise Count
             </Text>
             <TextInput
@@ -96,7 +96,7 @@ export default function UploadTrainingScreen() {
 
           {/* Total Lesson */}
           <View className="mb-5">
-            <Text className="text-white text-sm font-medium mb-2">
+            <Text className="text-white text-sm font-tektur-semibold mb-2">
               Total Lesson
             </Text>
             <TextInput
@@ -110,7 +110,7 @@ export default function UploadTrainingScreen() {
 
           {/* Calorie Burned */}
           <View className="mb-5">
-            <Text className="text-white text-sm font-medium mb-2">
+            <Text className="text-white text-sm font-tektur-semibold mb-2">
               Calorie Burned
             </Text>
             <TextInput
@@ -131,7 +131,7 @@ export default function UploadTrainingScreen() {
           activeOpacity={0.8}
           onPress={() => navigation.navigate("EpisodeScreen")}
         >
-          <Text className="text-[#0B1421] text-base font-bold">
+          <Text className="text-[#0B1421] text-base font-tektur-semibold">
             Next
           </Text>
         </TouchableOpacity>

@@ -57,7 +57,7 @@ const ProductReviewComponent = () => {
       
       <ScrollView className="flex-1 mt-9">
         {/* Header */}
-        <Text className="text-white text-2xl font-bold mb-6">
+        <Text className="text-white text-2xl font-tektur-semibold mb-6">
           Product review
         </Text>
 
@@ -72,11 +72,11 @@ const ProductReviewComponent = () => {
                     source={{ uri: review.avatar }}
                     className="w-10 h-10 rounded-full mr-3"
                   />
-                  <Text className="text-white text-base font-semibold">
+                  <Text className="text-white text-base font-tektur-semibold">
                     {review.name}
                   </Text>
                 </View>
-                <Text className="text-gray-400 text-sm">
+                <Text className="text-gray-400 text-sm font-tektur-semibold">
                   {review.timeAgo}
                 </Text>
               </View>
@@ -87,7 +87,7 @@ const ProductReviewComponent = () => {
               </View>
 
               {/* Review Text */}
-              <Text className="text-gray-300 text-base leading-6 mb-6">
+              <Text className="text-gray-300 text-base font-tektur-medium leading-6 mb-6">
                 {review.review}
               </Text>
             </View>

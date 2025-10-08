@@ -26,14 +26,14 @@ export default function AddProductScreen() {
           >
             <ChevronLeft size={24} color="#FFFFFF" strokeWidth={2.5} />
           </TouchableOpacity>
-          <Text className="text-white text-xl font-semibold ml-3">
+          <Text className="text-white text-xl font-tektur-semibold ml-3">
             Add Product
           </Text>
         </View>
 
         {/* Upload Image Section */}
         <View className="px-4">
-          <Text className="text-white text-base font-medium mb-3">
+          <Text className="text-white text-base font-tektur-semibold mb-3">
             Upload image
           </Text>
           <TouchableOpacity
@@ -42,13 +42,13 @@ export default function AddProductScreen() {
             activeOpacity={0.7}
           >
             <ImageIcon size={48} color="#4A5D7A" strokeWidth={1.5} />
-            <Text className="text-[#6B7D96] text-sm mt-3">
+            <Text className="text-[#6B7D96] text-sm mt-3 font-tektur-semibold">
               Upload Image
             </Text>
           </TouchableOpacity>
 
           {/* Upload More Image Section */}
-          <Text className="text-white text-base font-medium mb-3">
+          <Text className="text-white text-base font-tektur-semibold mb-3">
             Upload More image
           </Text>
           <View className="flex-row flex-wrap justify-between mb-6">
@@ -61,7 +61,7 @@ export default function AddProductScreen() {
                 activeOpacity={0.7}
               >
                 <ImageIcon size={40} color="#4A5D7A" strokeWidth={1.5} />
-                <Text className="text-[#6B7D96] text-sm mt-2">
+                <Text className="text-[#6B7D96] text-sm mt-2 font-tektur-semibold">
                   Upload Image
                 </Text>
               </TouchableOpacity>
@@ -77,7 +77,7 @@ export default function AddProductScreen() {
           activeOpacity={0.8}
           onPress={()=> navigation.navigate("AddProductScreenTwo")}
         >
-          <Text className="text-[#0B1421] text-base font-bold">
+          <Text className="text-[#0B1421] text-base font-tektur-semibold">
             Next
           </Text>
         </TouchableOpacity>

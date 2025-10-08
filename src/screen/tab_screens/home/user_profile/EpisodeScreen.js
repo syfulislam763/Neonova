@@ -23,7 +23,7 @@ export default function EpisodeScreen() {
           >
             <ChevronLeft size={24} color="#FFFFFF" strokeWidth={2} />
           </TouchableOpacity>
-          <Text className="text-white text-xl font-semibold ml-2">
+          <Text className="text-white text-xl font-tektur-semibold ml-2">
             Episode 1
           </Text>
         </View>
@@ -36,7 +36,7 @@ export default function EpisodeScreen() {
             activeOpacity={0.8}
           >
             <Video size={20} color="#0B1421" strokeWidth={2} fill="#0B1421" />
-            <Text className="text-[#0B1421] text-base font-semibold ml-2">
+            <Text className="text-[#0B1421] text-base font-tektur-semibold ml-2">
               Add Video
             </Text>
           </TouchableOpacity>
@@ -47,7 +47,7 @@ export default function EpisodeScreen() {
             activeOpacity={0.8}
           >
             <FileText size={20} color="#FFFFFF" strokeWidth={2} />
-            <Text className="text-white text-base font-semibold ml-2">
+            <Text className="text-white text-base font-tektur-semibold ml-2">
               Add Document
             </Text>
           </TouchableOpacity>
@@ -57,7 +57,7 @@ export default function EpisodeScreen() {
         <View className="px-5">
           {/* Upload Episode */}
           <View className="mb-5">
-            <Text className="text-white text-sm font-medium mb-2">
+            <Text className="text-white text-sm font-tektur-semibold mb-2">
               Upload Episode
             </Text>
             <TouchableOpacity
@@ -68,7 +68,7 @@ export default function EpisodeScreen() {
               <View className="w-11 h-11 rounded-lg border border-[#4A5D7A] items-center justify-center mb-2">
                 <Upload size={22} color="#6B7D96" strokeWidth={2} />
               </View>
-              <Text className="text-[#6B7D96] text-sm">
+              <Text className="text-[#6B7D96] text-sm font-tektur-semibold">
                 Upload Video
               </Text>
             </TouchableOpacity>
@@ -76,7 +76,7 @@ export default function EpisodeScreen() {
 
           {/* Title */}
           <View className="mb-5">
-            <Text className="text-white text-sm font-medium mb-2">
+            <Text className="text-white text-sm font-tektur-semibold mb-2">
               Title
             </Text>
             <TextInput
@@ -89,7 +89,7 @@ export default function EpisodeScreen() {
 
           {/* Episode Lesson */}
           <View className="mb-5">
-            <Text className="text-white text-sm font-medium mb-2">
+            <Text className="text-white text-sm font-tektur-semibold mb-2">
               Episode Lesson
             </Text>
             <TextInput
@@ -103,7 +103,7 @@ export default function EpisodeScreen() {
 
           {/* Calorie Burned */}
           <View className="mb-5">
-            <Text className="text-white text-sm font-medium mb-2">
+            <Text className="text-white text-sm font-medium mb-2 font-tektur-semibold">
               Calorie Burned
             </Text>
             <TextInput
@@ -123,7 +123,7 @@ export default function EpisodeScreen() {
           className="bg-[#C1F24E] rounded-2xl h-14 items-center justify-center"
           activeOpacity={0.8}
         >
-          <Text className="text-[#0B1421] text-base font-bold">
+          <Text className="text-[#0B1421] text-base font-tektur-semibold">
             Upload
           </Text>
         </TouchableOpacity>

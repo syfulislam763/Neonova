@@ -86,7 +86,7 @@ const OrderCard = () => {
           <TouchableOpacity className="mr-3" onPress={() => navigation.goBack()}>
             <ChevronLeft color="#ffffff" size={24} />
           </TouchableOpacity>
-          <Text className="text-white text-lg font-semibold">
+          <Text className="text-white text-lg font-tektur-semibold">
             My Cart
           </Text>
         </View>
@@ -118,34 +118,34 @@ const OrderCard = () => {
             <View className="flex-1 justify-between">
               <View>
                 <View className="flex-row justify-between items-start mb-1">
-                  <Text className="text-white text-base font-semibold flex-1">
+                  <Text className="text-white text-base font-tektur-semibold flex-1">
                     {item.title}
                   </Text>
                   <TouchableOpacity onPress={() => removeItem(item.id)}>
                     <Text className="text-red-500 text-lg ml-2">×</Text>
                   </TouchableOpacity>
                 </View>
-                <Text className="text-white/50 text-xs mb-2">
+                <Text className="text-white/50 text-xs font-tektur-semibold mb-2">
                   {item.description}
                 </Text>
               </View>
 
               {/* Price and Quantity */}
               <View className="flex-row justify-between items-center">
-                <Text className="text-[#a3e635] text-base font-bold">
+                <Text className="text-[#a3e635] text-base font-tektur-semibold">
                   ${item.price.toFixed(2)}
                 </Text>
 
                 {/* Quantity Controls */}
                 <View className="flex-row items-center bg-black/30 rounded-lg px-2 py-1">
                   <TouchableOpacity onPress={() => updateQuantity(item.id, 1)}>
-                    <Text className="text-white text-lg px-2 font-semibold">+</Text>
+                    <Text className="text-white text-lg px-2 font-tektur-semibold">+</Text>
                   </TouchableOpacity>
-                  <Text className="text-white text-sm px-3 font-semibold">
+                  <Text className="text-white text-sm px-3 font-tektur-semibold">
                     {item.quantity}
                   </Text>
                   <TouchableOpacity onPress={() => updateQuantity(item.id, -1)}>
-                    <Text className="text-white text-lg px-2 font-semibold">−</Text>
+                    <Text className="text-white text-lg px-2 font-tektur-semibold">−</Text>
                   </TouchableOpacity>
                 </View>
               </View>
@@ -156,20 +156,20 @@ const OrderCard = () => {
         {/* Summary Section */}
         <View className="mt-5 mb-5">
           <View className="flex-row justify-between mb-3">
-            <Text className="text-white/60 text-sm">Subtotal</Text>
-            <Text className="text-white text-sm font-semibold">
+            <Text className="text-white/60 text-sm font-tektur-semibold">Subtotal</Text>
+            <Text className="text-white text-sm font-tektur-semibold">
               ${subtotal.toFixed(2)}
             </Text>
           </View>
           <View className="flex-row justify-between mb-3">
-            <Text className="text-white/60 text-sm">Delivery Fee</Text>
+            <Text className="text-white/60 text-sm font-tektur-semibold">Delivery Fee</Text>
             <Text className="text-white text-sm font-semibold">
               ${deliveryFee.toFixed(2)}
             </Text>
           </View>
           <View className="flex-row justify-between mb-3">
-            <Text className="text-white/60 text-sm">Discount</Text>
-            <Text className="text-white text-sm font-semibold">
+            <Text className="text-white/60 text-sm font-tektur-semibold">Discount</Text>
+            <Text className="text-white text-sm font-tektur-semibold">
               ${discount.toFixed(2)}
             </Text>
           </View>
@@ -183,12 +183,12 @@ const OrderCard = () => {
             className="bg-[#a3e635] py-4 px-10 rounded-xl flex-1 mr-3"
             activeOpacity={0.8}
           >
-            <Text className="text-black text-base font-bold text-center">
+            <Text className="text-black text-base font-tektur-semibold text-center">
               Checkout
             </Text>
           </TouchableOpacity>
           <View className="py-4 px-5">
-            <Text className="text-white text-xl font-bold">
+            <Text className="text-white text-xl font-tektur-semibold">
               ${total.toFixed(2)}
             </Text>
           </View>

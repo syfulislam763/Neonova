@@ -76,7 +76,7 @@ const TabbedProductsTraining = () => {
               activeOpacity={0.8}
             >
               <Text
-                className={`text-lg font-bold ${
+                className={`text-lg font-tektur-semibold ${
                   activeTab === 'Products' ? 'text-white' : 'text-gray-400'
                 }`}
               >
@@ -95,7 +95,7 @@ const TabbedProductsTraining = () => {
               activeOpacity={0.8}
             >
               <Text
-                className={`text-lg font-bold ${
+                className={`text-lg font-tektur-semibold ${
                   activeTab === 'Training' ? 'text-white' : 'text-gray-400'
                 }`}
               >
@@ -110,10 +110,10 @@ const TabbedProductsTraining = () => {
           {activeTab === 'Products' ? (
             // Products Tab Content
             <View>
-              <Text className="text-white text-3xl font-bold mb-4">
+              <Text className="text-white text-3xl font-tektur-semibold mb-4">
                 Trainer Products
               </Text>
-              <Text className="text-gray-400 text-base mb-6 leading-6">
+              <Text className="text-gray-400 text-base mb-6 font-inter-medium leading-6">
                 There are many variations of passages of Lorem Ipsum{'\n'}
                 but the majority have suffered available
               </Text>
@@ -159,17 +159,17 @@ const TabbedProductsTraining = () => {
                         </View>
 
                         {/* Product Title */}
-                        <Text className="text-white text-base font-bold text-center mb-2">
+                        <Text className="text-white text-base font-tektur-semibold text-center mb-2">
                           {product.title}
                         </Text>
 
                         {/* Product Description */}
-                        <Text className="text-gray-400 text-xs text-center mb-4 leading-4">
+                        <Text className="text-gray-400 font-tektur-semibold text-xs text-center mb-4 leading-4">
                           {product.description}
                         </Text>
 
                         {/* Product Price */}
-                        <Text className="text-lime-500 text-xl font-bold text-center">
+                        <Text className="text-lime-500 text-xl font-tektur-semibold text-center">
                           ${product.price}
                         </Text>
                       </View>
@@ -181,10 +181,10 @@ const TabbedProductsTraining = () => {
           ) : (
             // Training Tab Content
             <View>
-              <Text className="text-white text-3xl font-bold mb-4">
+              <Text className="text-white text-3xl font-tektur-semibold mb-4">
                 Training Session
               </Text>
-              <Text className="text-gray-400 text-base mb-6 leading-6">
+              <Text className="text-gray-400 font-inter-medium text-base mb-6 leading-6">
                 There are many variations of passages of Lorem Ipsum{'\n'}
                 but the majority have suffered available
               </Text>
@@ -212,12 +212,12 @@ const TabbedProductsTraining = () => {
 
                   <View className="p-5">
                     {/* Title */}
-                    <Text className="text-white text-xl font-bold mb-3">
+                    <Text className="text-white text-xl font-tektur-semibold mb-3">
                       Full Body & Arm Exercise
                     </Text>
 
                     {/* Description */}
-                    <Text className="text-gray-400 text-base mb-4 leading-6">
+                    <Text className="text-gray-400 font-inter-medium text-base mb-4 leading-6">
                       There are many variations of passages of Lorem Ipsum  but the majority have suffered available
                     </Text>
 
@@ -225,14 +225,14 @@ const TabbedProductsTraining = () => {
                     <View className="flex-row items-center mb-5">
                       <View className="flex-row items-center mr-6">
                         <Dumbbell color="#84cc16" size={16} />
-                        <Text className="text-white text-sm ml-2">
+                        <Text className="text-white font-tektur-semibold text-sm ml-2">
                           10 Expercise
                         </Text>
                       </View>
                       
                       <View className="flex-row items-center">
                         <PlayCircle color="#84cc16" size={16} />
-                        <Text className="text-white text-sm ml-2">
+                        <Text className="text-white font-tektur-semibold text-sm ml-2">
                           8 Lesson
                         </Text>
                       </View>
@@ -247,14 +247,14 @@ const TabbedProductsTraining = () => {
                           }}
                           className="w-10 h-10 rounded-full mr-3"
                         />
-                        <Text className="text-white text-base">
+                        <Text className="text-white font-tektur-semibold text-base">
                           Ibrahim Afridi
                         </Text>
                       </View>
                       
                       <View className="flex-row items-center">
                         <Star color="#fbbf24" size={16} fill="#fbbf24" />
-                        <Text className="text-white text-base ml-1">
+                        <Text className="text-white font-tektur-semibold text-base ml-1">
                           4.7 (12)
                         </Text>
                       </View>
@@ -266,7 +266,7 @@ const TabbedProductsTraining = () => {
                       onPress={handleAddToCart}
                       activeOpacity={0.8}
                     >
-                      <Text className="text-black text-base font-bold mr-2">
+                      <Text className="text-black text-base font-tektur-semibold mr-2">
                         Add To Cart
                       </Text>
                       <ArrowRight color="#000000" size={20} />

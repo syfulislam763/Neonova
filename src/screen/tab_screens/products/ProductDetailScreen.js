@@ -111,17 +111,17 @@ const ProductDetailScreen = () => {
         {/* Product Info Section */}
         <View className=" px-5 pt-6 pb-8">
           {/* Price */}
-          <Text className="text-lime-500 text-4xl font-bold mb-4">
+          <Text className="text-lime-500 text-4xl font-tektur-semibold mb-4">
             $10.99
           </Text>
 
           {/* Title */}
-          <Text className="text-white text-2xl font-bold mb-4 leading-8">
+          <Text className="text-white text-2xl font-tektur-semibold mb-4 leading-8">
             Gucci hole of white single collar{'\n'}t-shirt exchange
           </Text>
 
           {/* Description */}
-          <Text className="text-gray-400 text-base leading-6">
+          <Text className="text-gray-400 text-base font-inter-medium leading-6">
             Lorem ipsum dolor sit amet, consectetur our adipiscing{'\n'}
             elit. Maecenas henderit luctus libero accused vulputate...
           </Text>

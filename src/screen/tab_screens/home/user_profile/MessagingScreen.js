@@ -146,17 +146,17 @@ const MessagingScreen = () => {
 
               {/* Message Content */}
               <View className="flex-1">
-                <Text className="text-white text-base font-semibold mb-1">
+                <Text className="text-white text-base font-tektur-semibold mb-1">
                   {chat.name}
                 </Text>
-                <Text className="text-gray-400 text-sm">
+                <Text className="text-gray-400 text-sm font-tektur-semibold">
                   {chat.message}
                 </Text>
               </View>
 
               {/* Time and Unread Badge */}
               <View className="items-end">
-                <Text className="text-gray-500 text-xs mb-2">
+                <Text className="text-gray-500 text-xs font-tektur-semibold mb-2">
                   {chat.time}
                 </Text>
                 {chat.unread && (

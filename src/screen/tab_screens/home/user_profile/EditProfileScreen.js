@@ -54,7 +54,7 @@ const EditProfileScreen = () => {
             >
               <ChevronLeft color="#ffffff" size={24} />
             </TouchableOpacity>
-            <Text className="text-white text-2xl font-bold">
+            <Text className="text-white text-2xl font-tektur-semibold">
               Edit Profile
             </Text>
           </View>
@@ -91,17 +91,17 @@ const EditProfileScreen = () => {
               </TouchableOpacity>
             </View>
 
-            <Text className="text-white text-xl font-bold mt-4">
+            <Text className="text-white text-xl font-tektur-semibold mt-4">
               Artus Schulz
             </Text>
-            <Text className="text-gray-400 text-sm">
+            <Text className="text-gray-400 text-sm font-tektur-semibold">
               ibrahimafridi947@gmail.com
             </Text>
           </View>
 
           {/* Your Name Field */}
           <View className="mb-5">
-            <Text className="text-white text-base font-medium mb-3">
+            <Text className="text-white text-base font-tektur-semibold mb-3">
               Your Name
             </Text>
             <BlurView
@@ -125,7 +125,7 @@ const EditProfileScreen = () => {
 
           {/* Age Field */}
           <View className="mb-5">
-            <Text className="text-white text-base font-medium mb-3">
+            <Text className="text-white text-base font-tektur-semibold mb-3">
               Age
             </Text>
             <BlurView
@@ -156,7 +156,7 @@ const EditProfileScreen = () => {
           <View className="flex-row gap-4 mb-5">
             {/* Height */}
             <View className="flex-1">
-              <Text className="text-white text-base font-medium mb-3">
+              <Text className="text-white text-base font-tektur-semibold mb-3">
                 Height
               </Text>
               <BlurView
@@ -177,7 +177,7 @@ const EditProfileScreen = () => {
                     keyboardType="numeric"
                     placeholderTextColor="#9ca3af"
                   />
-                  <Text className="text-lime-500 text-sm font-semibold">
+                  <Text className="text-lime-500 text-sm font-tektur-semibold">
                     {heightUnit}
                   </Text>
                 </View>
@@ -186,7 +186,7 @@ const EditProfileScreen = () => {
 
             {/* Weight */}
             <View className="flex-1">
-              <Text className="text-white text-base font-medium mb-3">
+              <Text className="text-white text-base font-tektur-semibold mb-3">
                 Weight
               </Text>
               <BlurView
@@ -207,7 +207,7 @@ const EditProfileScreen = () => {
                     keyboardType="numeric"
                     placeholderTextColor="#9ca3af"
                   />
-                  <Text className="text-lime-500 text-sm font-semibold">
+                  <Text className="text-lime-500 text-sm font-tektur-semibold">
                     {weightUnit}
                   </Text>
                 </View>
@@ -218,7 +218,7 @@ const EditProfileScreen = () => {
           {/* About Field */}
           <View className="mb-6">
             <View className="flex-row items-center justify-between mb-3">
-              <Text className="text-white text-base font-medium">
+              <Text className="text-white text-base font-tektur-semibold">
                 About
               </Text>
               <Edit3 color="#84cc16" size={16} />
@@ -244,7 +244,7 @@ const EditProfileScreen = () => {
                 placeholderTextColor="#9ca3af"
               />
             </BlurView>
-            <Text className="text-gray-400 text-xs text-right mt-2">
+            <Text className="text-gray-400 text-xs text-right mt-2 font-tektur-semibold">
               {about.length}/200
             </Text>
           </View>
@@ -258,7 +258,7 @@ const EditProfileScreen = () => {
           onPress={handleSaveChanges}
           activeOpacity={0.8}
         >
-          <Text className="text-black text-lg font-bold">
+          <Text className="text-black text-lg font-bold font-tektur-semibold">
             Save Changes
           </Text>
         </TouchableOpacity>

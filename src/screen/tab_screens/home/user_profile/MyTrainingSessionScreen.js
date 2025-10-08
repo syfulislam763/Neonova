@@ -174,7 +174,7 @@ const MyTrainingSessionScreen = () => {
                 <ChevronLeft color="#ffffff" size={24} />
               </TouchableOpacity>
               
-              <Text className="text-white text-2xl font-bold">
+              <Text className="text-white text-2xl font-tektur-semibold">
                 My Training
               </Text>
             </View>
@@ -207,10 +207,10 @@ const MyTrainingSessionScreen = () => {
         {/* Content Section */}
         <View className="px-5">
           {/* Training Session Header */}
-          <Text className="text-white text-2xl font-bold mb-3">
+          <Text className="text-white text-2xl font-tektur-semibold mb-3">
             Training Session
           </Text>
-          <Text className="text-gray-400 text-base mb-6 leading-6">
+          <Text className="text-gray-400 text-base mb-6 font-inter-medium leading-6">
             There are many variations of passages of Lorem Ipsum{'\n'}
             but the majority have suffered available
           </Text>

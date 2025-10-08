@@ -60,8 +60,8 @@ const TabbedFitnessComponent = () => {
                   <View className="flex-row items-center mb-1">
                     <Text className="text-red-500 text-lg mr-1">🔥</Text>
                   </View>
-                  <Text className="text-white text-2xl font-bold">1500 Cal</Text>
-                  <Text className="text-gray-400 text-base">Yesterday</Text>
+                  <Text className="text-white text-2xl font-tektur-semibold">1500 Cal</Text>
+                  <Text className="text-gray-400 text-base font-tektur-semibold">Yesterday</Text>
                 </View>
               </View>
 
@@ -70,25 +70,25 @@ const TabbedFitnessComponent = () => {
                 <View className="mb-4">
                   <View className="flex-row items-center mb-2">
                     <View className="w-4 h-4 rounded-full bg-blue-500 mr-3" />
-                    <Text className="text-gray-400 text-base flex-1">Doing Nothing</Text>
+                    <Text className="text-gray-400 text-base flex-1 font-tektur-semibold">Doing Nothing</Text>
                   </View>
-                  <Text className="text-blue-500 text-xl font-bold ml-7">33%</Text>
+                  <Text className="text-blue-500 text-xl font-tektur-semibold ml-7">33%</Text>
                 </View>
 
                 <View className="mb-4">
                   <View className="flex-row items-center mb-2">
                     <View className="w-4 h-4 rounded-full bg-lime-500 mr-3" />
-                    <Text className="text-gray-400 text-base flex-1">Training Task</Text>
+                    <Text className="text-gray-400 font-tektur-semibold text-base flex-1">Training Task</Text>
                   </View>
-                  <Text className="text-lime-500 text-xl font-bold ml-7">33%</Text>
+                  <Text className="text-lime-500 text-xl font-bold ml-7 font-tektur-semibold">33%</Text>
                 </View>
 
                 <View>
                   <View className="flex-row items-center mb-2">
                     <View className="w-4 h-4 rounded-full bg-gray-500 mr-3" />
-                    <Text className="text-gray-400 text-base flex-1">Meal Ratio</Text>
+                    <Text className="text-gray-400 text-base flex-1 font-tektur-semibold">Meal Ratio</Text>
                   </View>
-                  <Text className="text-gray-500 text-xl font-bold ml-7">33%</Text>
+                  <Text className="text-gray-500 text-xl font-bold ml-7 font-tektur-semibold">33%</Text>
                 </View>
               </View>
             </View>
@@ -99,7 +99,7 @@ const TabbedFitnessComponent = () => {
               onPress={handleViewFullStats}
               activeOpacity={0.8}
             >
-              <Text className="text-black text-base font-semibold mr-2">
+              <Text className="text-black text-base font-tektur-semibold mr-2">
                 View Full Statistics
               </Text>
               <ArrowRight color="#000000" size={20} />
@@ -112,10 +112,10 @@ const TabbedFitnessComponent = () => {
           <ScrollView className="px-5 pb-6">
             {/* Header */}
             <View className="mb-6">
-              <Text className="text-white text-2xl font-bold mb-3">
+              <Text className="text-white text-2xl font-tektur-semibold mb-3">
                 Training Session
               </Text>
-              <Text className="text-gray-400 text-base leading-6">
+              <Text className="text-gray-400 font-inter-medium text-base leading-6">
                 There are many variations of passages of Lorem Ipsum{'\n'}
                 but the majority have suffered available
               </Text>
@@ -130,10 +130,10 @@ const TabbedFitnessComponent = () => {
                 className="w-full h-48 rounded-2xl mb-4"
               />
               
-              <Text className="text-white text-xl font-bold mb-2">
+              <Text className="text-white text-xl font-tektur-semibold mb-2 ">
                 Full Body & Arm Excercise
               </Text>
-              <Text className="text-gray-400 text-base mb-4 leading-6">
+              <Text className="text-gray-400 text-base mb-4 leading-6 font-inter-medium">
                 There are many variations of passages of Lorem{'\n'}
                 Ipsum but the majority have suffered available
               </Text>
@@ -142,17 +142,17 @@ const TabbedFitnessComponent = () => {
               <View className="flex-row items-center justify-between mb-6">
                 <View className="flex-row items-center">
                   <Dumbbell color="#84cc16" size={16} />
-                  <Text className="text-white text-sm ml-2">10 Exercise</Text>
+                  <Text className="text-white text-sm ml-2 font-tektur-semibold">10 Exercise</Text>
                 </View>
                 
                 <View className="flex-row items-center">
                   <PlayCircle color="#84cc16" size={16} />
-                  <Text className="text-white text-sm ml-2">8 Lesson</Text>
+                  <Text className="text-white text-sm ml-2 font-tektur-semibold">8 Lesson</Text>
                 </View>
                 
                 <View className="flex-row items-center">
                   <Flame color="#84cc16" size={16} />
-                  <Text className="text-white text-sm ml-2">160k Cal</Text>
+                  <Text className="text-white text-sm ml-2 font-tektur-semibold">160k Cal</Text>
                 </View>
               </View>
 
@@ -165,12 +165,12 @@ const TabbedFitnessComponent = () => {
                     }}
                     className="w-10 h-10 rounded-full mr-3"
                   />
-                  <Text className="text-white text-base">Ibrahim Afridi</Text>
+                  <Text className="text-white text-base font-tektur-semibold">Ibrahim Afridi</Text>
                 </View>
                 
                 <View className="flex-row items-center">
-                  <Text className="text-yellow-500 text-lg mr-1">★</Text>
-                  <Text className="text-white text-base">4.7 (12)</Text>
+                  <Text className="text-yellow-500 text-lg mr-1 font-tektur-semibold">★</Text>
+                  <Text className="text-white text-base font-tektur-semibold">4.7 (12)</Text>
                 </View>
               </View>
             </View>
@@ -181,7 +181,7 @@ const TabbedFitnessComponent = () => {
               onPress={handleContinueCourses}
               activeOpacity={0.8}
             >
-              <Text className="text-black text-base font-semibold mr-2">
+              <Text className="text-black text-base font-semibold mr-2 font-tektur-semibold">
                 Continue Courses
               </Text>
               <ArrowRight color="#000000" size={20} />
@@ -194,10 +194,10 @@ const TabbedFitnessComponent = () => {
           <ScrollView className="px-5 pb-6">
             {/* Header */}
             <View className="mb-6">
-              <Text className="text-white text-2xl font-bold mb-3">
+              <Text className="text-white text-2xl font-bold mb-3 font-tektur-semibold">
                 Community Fitness
               </Text>
-              <Text className="text-gray-400 text-base leading-6">
+              <Text className="text-gray-400 text-base leading-6 font-inter-medium">
                 There are many variations of passages of Lorem Ipsum{'\n'}
                 but the majority have suffered available
               </Text>
@@ -215,8 +215,8 @@ const TabbedFitnessComponent = () => {
                     className="w-10 h-10 rounded-full mr-3"
                   />
                   <View>
-                    <Text className="text-white text-base font-semibold">Ibrahim Afridi</Text>
-                    <Text className="text-gray-400 text-sm">14 minutes ago</Text>
+                    <Text className="text-white text-base font-tektur-semibold">Ibrahim Afridi</Text>
+                    <Text className="text-gray-400 text-sm font-tektur-semibold">14 minutes ago</Text>
                   </View>
                 </View>
                 
@@ -226,7 +226,7 @@ const TabbedFitnessComponent = () => {
               </View>
 
               {/* Post Text */}
-              <Text className="text-white text-base mb-4 leading-6">
+              <Text className="text-white text-base mb-4 leading-6 font-inter-medium">
                 Exercising clears my mind, boosts my energy level{'\n'}
                 and feels absolutely amazing!
               </Text>
@@ -240,7 +240,7 @@ const TabbedFitnessComponent = () => {
               />
 
               {/* Liked by Info */}
-              <Text className="text-gray-400 text-sm mb-4">
+              <Text className="text-gray-400 text-sm mb-4 font-tektur-semibold">
                 Liked by Ronnie Coleman and 1.2k people
               </Text>
 
@@ -248,17 +248,17 @@ const TabbedFitnessComponent = () => {
               <View className="flex-row items-center justify-between">
                 <View className="flex-row items-center">
                   <Heart color="#ef4444" size={20} fill="#ef4444" />
-                  <Text className="text-white text-base ml-2 mr-6">1.2k</Text>
+                  <Text className="text-white text-base ml-2 mr-6 font-tektur-semibold">1.2k</Text>
                 </View>
                 
                 <View className="flex-row items-center">
                   <MessageCircle color="#9ca3af" size={20} />
-                  <Text className="text-gray-400 text-base ml-2 mr-6">469</Text>
+                  <Text className="text-gray-400 text-base ml-2 mr-6 font-tektur-semibold">469</Text>
                 </View>
                 
                 <View className="flex-row items-center">
                   <Share color="#9ca3af" size={20} />
-                  <Text className="text-gray-400 text-base ml-2">345</Text>
+                  <Text className="text-gray-400 text-base ml-2 font-tektur-semibold">345</Text>
                 </View>
               </View>
             </View>
@@ -287,7 +287,7 @@ const TabbedFitnessComponent = () => {
               activeOpacity={0.7}
             >
               <Text
-                className={`text-base font-medium ${
+                className={`text-base  font-tektur-semibold ${
                   activeTab === tab ? 'text-white' : 'text-gray-400'
                 }`}
               >

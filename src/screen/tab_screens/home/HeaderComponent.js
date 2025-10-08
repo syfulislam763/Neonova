@@ -35,10 +35,10 @@ const HeaderComponent = () => {
       <View className="flex-row items-center justify-between mb-6">
         {/* Left Side - Name and Date */}
         <View>
-          <Text className="text-white text-2xl font-bold">
+          <Text className="text-white text-2xl font-tektur-semibold">
             Artus Schulz
           </Text>
-          <Text className="text-gray-400 text-base mt-1">
+          <Text className="text-gray-400 text-base mt-1 font-inter-medium">
             October 25, 2019
           </Text>
         </View>

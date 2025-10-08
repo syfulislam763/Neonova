@@ -104,17 +104,17 @@ const ProductCardGrid = () => {
                   </View>
 
                   {/* Product Title */}
-                  <Text className="text-white text-base font-bold text-center mb-2">
+                  <Text className="text-white text-base font-tektur-semibold text-center mb-2">
                     {product.title}
                   </Text>
 
                   {/* Product Description */}
-                  <Text className="text-gray-400 text-xs text-center mb-4 leading-4">
+                  <Text className="text-gray-400 text-xs text-center font-tektur-semibold mb-4 leading-4">
                     {product.description}
                   </Text>
 
                   {/* Product Price */}
-                  <Text className="text-lime-500 text-lg font-bold text-center">
+                  <Text className="text-lime-500 text-lg font-tektur-semibold text-center">
                     {product.price}
                   </Text>
                 </View>
